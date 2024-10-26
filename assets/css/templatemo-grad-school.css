@@ -17,7 +17,6 @@ body {
 
 a {
 	color: #3CF;
-    text-decoration: none;
 }
 
 a:hover {
@@ -187,8 +186,8 @@ a.menu-link { display: none; }
 }
 
 .main-header {
-    background-color: rgba(22,34,57,0.95);
-    height: 80px;
+    background-color: rgba(0, 0, 0, 0.95);
+    height: 75px;
     position: fixed;
     z-index: 12;
     width: 100%;
@@ -220,16 +219,23 @@ a.navbar-brand img{
   }
 }
 
+.header-image img{
+  width: 100%;
+}
+
 .main-menu {
-    float: right;
-    padding-right: 10px;
+    float: left;
+    width: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.95);
 }
 
 .main-menu li {
     display: inline-block;
-    line-height: 79px;
+    line-height: 45px;
     margin-left: 10px;
     position: relative;
+    
 }
 
 .main-menu li:first-child {
@@ -238,13 +244,95 @@ a.navbar-brand img{
 
 .main-menu li a {
     padding: 10px 15px;
-    font-size: 13px;
+    font-size: 11px;
     text-transform: uppercase;
     letter-spacing: 0.5px;
     font-weight: 700;
-    color: #fff;
-    border: 2px solid transparent;
-    transition: all 0.5s;
+    color: #ffffff;
+  
+}
+
+.login-button img{
+  width: 30px;
+}
+
+.login-button {
+  float: right;
+  line-height: 45px;
+  padding-right: 30px;
+  position: relative;
+}
+
+.login-button li a {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+nav .login-button a span{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-bottom: 2px solid #3CF;
+  border-radius: 15px;
+  transform: scale(0) translateY(50px);
+  opacity: 0;
+  transition: .5s;
+} 
+
+nav .login-button a:hover span{
+  transform: scale(1.5) translateY(4px);
+  opacity: 1;
+}
+
+nav a{
+  position: relative;
+}
+ 
+nav a span{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-bottom: 2px solid rgb(255, 51, 160);
+  border-radius: 15px;
+  transform: scale(0) translateY(50px);
+  opacity: 0;
+  transition: .5s;
+}
+
+nav a:hover span{
+  transform: scale(1) translateY(0px);
+  opacity: 1;
+}
+
+.main-menu li .login{
+  float: right;
+}
+
+.main-menu li .sub-menu li a span{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-bottom: 2px solid #3CF;
+  border-radius: 40px;
+  transform: scale(0) translateY(50px);
+  opacity: 0;
+  transition: .5s;
+}
+
+.main-menu li .sub-menu li a:hover span{
+  transform: scale(1) translateY(7px);
+  opacity: 1;
+
+
 }
 
 .main-menu li.has-submenu a:after {
@@ -260,10 +348,11 @@ a.navbar-brand img{
 .main-menu li .sub-menu {
     position: absolute;
     width: 216px; 
-    background-color: rgba(24, 35, 58, 0.8);
+    background-color: rgba(0, 0, 0, 0.95);
     opacity: 0;
     visibility: hidden;
     transition: all 0.5s;
+    border-radius: 0px 0px 20px 20px;
 }
 
 .main-menu li:hover .sub-menu {
@@ -274,10 +363,11 @@ a.navbar-brand img{
 .main-menu li .sub-menu li {
     display: block;
     text-align: left;
-    line-height: 20px;
+    line-height: 30px;
     margin-left: 0px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     padding-bottom: 15px;
+    border-radius: 40px;
     border-bottom: 1px solid #121b2f;
 }
 
@@ -291,24 +381,90 @@ a.navbar-brand img{
 }
 
 .main-menu li .sub-menu li a {
-    font-size: 12px;
+    font-size: 11px;
     text-align: center;
     font-weight: 500;
     padding: 0px 15px;
     letter-spacing: 0.5px;
-    border: none;
     transition: all 0.5s;
 }
 
-.main-menu li .sub-menu li a:hover {
-    color: #8b352e;
-    border: none;
+/* Login Button Sub Menu Start */
+.login-button li .sub-menu li a span{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-bottom: 2px solid rgb(255, 51, 160);
+  border-radius: 40px;
+  transform: scale(0) translateY(50px);
+  opacity: 0;
+  transition: .5s;
 }
 
-.main-nav li:hover a,
-.main-nav li.active a {
-    border: 2px solid #8b352e;
+.login-button li .sub-menu li a:hover span{
+  transform: scale(1) translateY(7px);
+  opacity: 1;
+
+
 }
+
+.login-button li.has-submenu a:after {
+    content: '\f107';
+    font-family: "FontAwesome";
+    margin-left: 5px;
+}
+
+.login-button li.has-submenu ul li a:after {
+    display: none;
+}
+
+.login-button li .sub-menu {
+    position: relative;
+    width: 216px; 
+    background-color: rgba(0, 0, 0, 0.95);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s;
+    border-radius: 0px 0px 20px 20px;
+}
+
+.login-button li:hover .sub-menu {
+    opacity: 1;
+    visibility: visible;
+}
+
+.login-button li .sub-menu li {
+    display: block;
+    text-align: left;
+    line-height: 30px;
+    margin-left: 0px;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-radius: 40px;
+    border-bottom: 1px solid #121b2f;
+}
+
+.login-button li .sub-menu li:first-child {
+    padding-top: 15px;
+}
+
+.login-button li .sub-menu li:last-child {
+    margin-bottom: 0px;
+    border-bottom: none;
+}
+
+.login-button li .sub-menu li a {
+    font-size: 11px;
+    text-align: center;
+    font-weight: 500;
+    padding: 0px 15px;
+    letter-spacing: 0.5px;
+    transition: all 0.5s;
+}
+
+/* Login Button Sub Menu End*/
 
 @media (max-width: 950px) {
   .main-nav li:hover a,
@@ -318,6 +474,171 @@ a.navbar-brand img{
   }
 }
 
+.main-menu li  .login {
+  display: inline-block;
+  line-height: 45px;
+  margin-left: 10px;
+  position: relative;
+  
+}
+
+.main-menu li .login :first-child {
+  margin-left: 0px;
+}
+
+.main-menu li  .login a {
+  padding: 10px 15px;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 700;
+  color: #ffffff;
+
+}
+
+/* Admin Login Page Design Start */ 
+.login-container {
+    background: linear-gradient(to right, #0f172a, #1b2d50);
+    padding-top: 0px;
+    width: 800px;
+    height: 400px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+
+/* Login form section */
+.login-box {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.login-form {
+  width: 50%;
+  padding: 40px;
+  background-color: #18233a;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h2 {
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+/* Input fields styling */
+.input-box {
+  margin-bottom: 20px;
+}
+
+.input-box label {
+  color: #fff;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.input-group {
+  position: relative;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  padding-left: 30px;
+  border: none;
+  border-radius: 5px;
+  background-color: #2e3a55;
+  color: #fff;
+}
+
+.input-group .icon {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  color: #fff;
+}
+
+/* Login button styling */
+.login-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #00e7d7;
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.login-btn:hover {
+  background-color: #00c0aa;
+}
+
+.signup-text {
+  color: #fff;
+  margin-top: 10px;
+}
+
+.signup-text a {
+  color: #00e7d7;
+  text-decoration: none;
+}
+
+.signup-text a:hover {
+  text-decoration: underline;
+}
+
+/* Welcome box section */
+.welcome-box {
+  width: 50%;
+  background-color: #00e7d7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+.welcome-box h2 {
+  color: #fff;
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.welcome-box p {
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .login-container {
+      flex-direction: column;
+      width: 95%;
+      height: auto;
+  }
+
+  .login-form, .welcome-box {
+      width: 100%;
+  }
+}
+
+.login-area{
+  justify-content: center;
+  align-content: center;
+}
+
+/* Admin Login Page Design End /*
 
 /* Slider */
 
