@@ -143,7 +143,6 @@ document.getElementById('healthandsafety').addEventListener('click', function ()
 document.getElementById('oncampus').addEventListener('click', function () {
 	window.location.href = 'oncampus.html';
 });
-
 //sports Button
 document.getElementById('sports').addEventListener('click', function () {
 	window.location.href = 'sports.html';
