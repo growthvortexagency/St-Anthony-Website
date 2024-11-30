@@ -2,10 +2,10 @@
 
 .saint-section {
     position: relative;
-    background-image: url(../images/patronbg-cropped.jpg);
     display: flex;
     justify-content: center;
-    padding: 50px 20px;
+    padding: 70px 20px;
+    background-image: linear-gradient(to top left, rgb(252, 252, 102), white);
 }
 
 /* Container for image and text */
@@ -21,7 +21,7 @@
     max-width: 320px;
     height: auto;
     margin-top: 5px;
-    border-radius: 8px;
+    border-radius: 20px;
 }
 
 /* Text container styling */
@@ -32,16 +32,20 @@
 
 /* Headline styling */
 .saint-text h1 {
-    color: aliceblue;
+    color: black;
     font-size: 32px;
+    text-transform: uppercase;
     margin-bottom: 20px;
     font-weight: bold;
+    font-family: 'Trajan Pro', sans-serif;
 }
 
 /* Paragraph styling */
 .saint-text p {
-    color: aliceblue;
-    font-size: 15px;
+    color: black;
+    font-size: 18px;
+    text-align: justify;    
+    font-family: "Times New Roman", Times, serif;
     line-height: 1.6;
     margin-bottom: 20px;
 }
@@ -62,3 +66,66 @@
     margin-top: -10px;
 }
 
+
+.wrapper {
+    width: fit-content;
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.wrapper::before{
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 300px;
+    height: 410px;
+    background: linear-gradient(-10deg, transparent, transparent, 
+    #694b0a, #694b0a, #694b0a);
+    z-index: 1;
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+}
+
+.wrapper::after{
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 300px;
+    height: 410px;
+    background: linear-gradient(0deg, transparent, transparent, 
+    #694b0a, #694b0a, #694b0a);
+    backdrop-filter: blur(40%);
+    z-index: 1;
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+    animation-delay: -3s;
+}
+
+@keyframes animate
+{
+    0%
+    {
+        transform: rotate(0deg);
+    }
+    100%
+    {
+        transform: rotate(360deg);
+    }
+}
+
+.wrapper .imagebox {
+    width: fit-content;
+    border-radius: 20px;
+    padding: 0 4px 3px 3px;
+    z-index: 2;
+    justify-content: center;
+    vertical-align: top;
+    margin-bottom: 1px;
+}
