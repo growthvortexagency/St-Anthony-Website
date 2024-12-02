@@ -199,3 +199,7 @@ document.getElementById('newsletters').addEventListener('click', function () {
 document.getElementById('naac').addEventListener('click', function () {
 	window.location.href = 'naac.html';
 });
+//Faculties Button
+document.getElementById('faculties').addEventListener('click', function () {
+	window.location.href = 'faculties.html';
+});
