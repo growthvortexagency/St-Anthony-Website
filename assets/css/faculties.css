@@ -51,8 +51,8 @@ body {
 }
 
 .our-team .team-content {
-    width: 50%;
-    padding: 15px 0 5px;
+    width: 53%;
+    padding: 15px 0 20px;
     background: #ff3232;
     position: absolute;
     bottom: 50px;
@@ -128,7 +128,6 @@ input[type="checkbox"] {
 .accordion .content {
     padding: 0 10px;
     height: fit-content;
-    line-height: 26px;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.5s, padding 0.5s;
@@ -139,6 +138,6 @@ input[type="checkbox"] {
 }
 
 .accordion input[type="checkbox"]:checked + label + .content {
-    max-height: 500px;
+    max-height: 600px;
     padding: 10px 10px 20px;
 }
