@@ -23,6 +23,7 @@
   <link rel="stylesheet" href="assets/css/footer.css">
   <link rel="stylesheet" href="assets/css/social-media-icons.css">
   <link rel="stylesheet" href="assets/css/calender.css">
+  <link rel="stylesheet" href="assets/css/photo_gallery.css">
 </head>
 
 <body>
@@ -96,7 +97,7 @@
   <!-- ***** Main Banner Area Start ***** -->
   <section class="section main-banner" id="top" data-section="section1">
     <video autoplay="" muted="" loop="" id="bg-video">
-      <source src="assets/images/course-video.mp4" type="video/mp4">
+      <source src="assets/videos/3.mp4" type="video/mp4">
     </video>
     </div>
     </div>
@@ -148,13 +149,14 @@
   </div>
   <!-- ****** Social Media Buttons End ****** -->
 
-  <!-- ************* Calender Section Start*************** -->
+
+  <!-- ************* Calender Section Start*************** 
   <div class="container-1">
     <div class="calendar">
       <div class="front-1">
         <div class="current-date">
           <h1>Friday 15th</h1>
-          <h1>January 2016</h1> 
+          <h1>January 2016</h1>
         </div>
 
         <div class="current-month">
@@ -227,7 +229,7 @@
         <div class="info">
           <div class="date">
             <p class="info-date">
-            Date: <span>Jan 15th, 2016</span>
+              Date: <span>Jan 15th, 2016</span>
             </p>
             <p class="info-time">
               Time: <span>6:35 PM</span>
@@ -257,93 +259,205 @@
 
     </div>
   </div>
-  <!-- ************* Calender Section End*************** -->
-  
-  <footer class="footer-48201">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4 pr-md-5">
-          <img src="assets/images/college_logo.png" class="footer-site-logo" alt="" srcset="">
+  ************* Calender Section End*************** -->
+
+  <div class="gallery_1" unique-script-id="w-w-dm-id">
+    <div class="responsive-container-block bigContainer">
+      <div class="responsive-container-block Container">
+        <p class="text-blk heading">
+          Photo Gallery
+        </p>
+        <div class="responsive-container-block imgContainer">
+          <div class="project project1">
+            <img class="smallImage" src="assets/images/image-gallery/img 1.png">
+            <div class="overlay">
+              <div class="overlay-inner">
+                <button class="close">
+                  Close X
+                </button>
+                <div class="hdImgs">
+                  <img class="squareImg" src="assets/images/image-gallery/img 1.png">
+                </div>
+              </div>
+            </div>
+            <div class="btn-box">
+              <button class="btn">
+                View
+              </button>
+            </div>
+          </div>
+          <div class="project project2">
+            <img class="smallImage" src="assets/images/image-gallery/_DSC6109.jpg">
+            <div class="overlay">
+              <div class="overlay-inner">
+                <button class="close">
+                  Close X
+                </button>
+                <div class="hdImgs">
+                  <img class="squareImg" src="assets/images/image-gallery/_DSC6109.jpg">
+                </div>
+              </div>
+            </div>
+            <div class="btn-box">
+              <button class="btn">
+                View
+              </button>
+            </div>
+          </div>
+          <div class="project project3">
+            <img class="smallImage" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/bb3.png">
+            <div class="overlay">
+              <div class="overlay-inner">
+                <button class="close">
+                  Close X
+                </button>
+                <div class="hdImgs">
+                  <img class="squareImg" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/bb3.png">
+                </div>
+              </div>
+            </div>
+            <div class="btn-box">
+              <button class="btn">
+                View
+              </button>
+            </div>
+          </div>
+          <div class="project project4">
+            <img class="smallImage" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/bb6.png">
+            <div class="overlay">
+              <div class="overlay-inner">
+                <button class="close">
+                  Close X
+                </button>
+                <div class="hdImgs">
+                  <img class="squareImg" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/bb6.png">
+                </div>
+              </div>
+            </div>
+            <div class="btn-box">
+              <button class="btn">
+                View
+              </button>
+            </div>
+          </div>
+          <div class="project project5">
+            <img class="smallImage" src="assets/images/image-gallery/DSC_0540.JPG">
+            <div class="overlay">
+              <div class="overlay-inner">
+                <button class="close">
+                  Close X
+                </button>
+                <div class="hdImgs">
+                  <img class="squareImg" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/bb4.png">
+                </div>
+              </div>
+            </div>
+            <div class="btn-box">
+              <button class="btn">
+                View
+              </button>
+            </div>
+          </div>
+          <div class="project project6">
+            <img class="smallImage" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/bb5.png">
+            <div class="overlay">
+              <div class="overlay-inner">
+                <button class="close">
+                  Close X
+                </button>
+                <div class="hdImgs">
+                  <img class="squareImg" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/bb5.png">
+                </div>
+              </div>
+            </div>
+            <div class="btn-box">
+              <button class="btn">
+                View
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <footer>
+    <div class="footer">
+      <div class="bubbles">
+        <!-- Generate 128 bubbles dynamically -->
+        <script>
+          for (let i = 0; i < 900; i++) {
+            const bubble = document.createElement('div');
+            bubble.className = 'bubble';
+            bubble.style.setProperty('--size', `${0.3 + Math.random() * 4}rem`);
+            bubble.style.setProperty('--distance', `${6 + Math.random() * 4}rem`);
+            bubble.style.setProperty('--position', `${-2 + Math.random() * 150}%`);
+            bubble.style.setProperty('--time', `${2 + Math.random() * 2}s`);
+            bubble.style.setProperty('--delay', `${-1 * (2 + Math.random() * 2)}s`);
+            document.querySelector('.bubbles').appendChild(bubble);
+          }
+        </script>
+      </div>
+      <div class="footer-container">
+        <!-- College Logo -->
+        <div class="footer-section logo-section">
+          <img src="assets/images/college_logo.png" alt="College Logo" class="college-logo">
           <p>Empowering students through knowledge, innovation, and a vibrant campus experience.</p>
         </div>
-        <div class="col-md">
-          <ul class="list-unstyled nav-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Infrastructure</a></li>
-            <li><a href="#">Academics</a></li>
-            <li><a href="#">Placements</a></li>
-          </ul>
+
+        <!-- Google Map -->
+        <div class="footer-section map-section">
+          <h3>Visit Us</h3>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13079.968240351709!2d77.49121499818274!3d12.92713284468112!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae3fc9ee8ae025%3A0x833ed7fc246e3a15!2sDarshan%20Degree%20College!5e0!3m2!1sen!2sin!4v1733118898970!5m2!1sen!2sin"
+            width="25px" height="150px" style="border:0;" allowfullscreen="" loading="lazy">
+          </iframe>
         </div>
-        <div class="col-md">
-          <ul class="list-unstyled nav-links">
-            <li><a href="#">Library</a></li>
-            <li><a href="#">NAAC</a></li>
-            <li><a href="#">Committees</a></li>
-            <li><a href="#">IQAC</a></li>
-            <li><a href="#">Newsletter</a></li>
-          </ul>
-        </div>
-        <div class="col-md">
-          <ul class="list-unstyled nav-links">
-            <li><a href="#">Admin Login</a></li>
-            <li><a href="#">Faculty Login</a></li>
-            <li><a href="#">Students Login</a></li>
-          </ul>
-        </div>
-        <div class="col-md text-md-center">
-          <ul class="social list-unstyled">
-            <li><a href="#"><span class="fab fa-facebook-f"></span></a></li>
-            <li><a href="#"><span class="fab fa-x"></span></a></li>
-            <li><a href="#"><span class="fab fa-instagram"></span></a></li>
-            <li><a href="#"><span class="fab fa-youtube"></span></a></li>
-          </ul>
-          <p class=""><a href="#" class="btn btn-tertiary">Contact Us</a></p>
-        </div>
-      </div>
 
 
-    <div class="footer2">
-      <div class="map-container">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13079.968240351709!2d77.49121499818274!3d12.92713284468112!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae3fc9ee8ae025%3A0x833ed7fc246e3a15!2sDarshan%20Degree%20College!5e0!3m2!1sen!2sin!4v1733118898970!5m2!1sen!2sin"
-          width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
-      </div>
-<!--
-      <div class="stats-container">
-        <h2>Website Visitor Statistics</h2>
-        <div class="stats">
-          <div class="stat-item">
-            <span class="stat-title">Today's Visitors</span>
-            <span class="stat-number">123</span>
+        <!-- Web Developers Info -->
+        <section class="website-coordinators">
+          <h3 class="headline">Web Coordinators</h3>
+          <div class="coordinator">
+            <div class="team-member">
+              <img src="assets/images/WebCoordinator/Divyashree.png" alt="Divyashree B L" class="profile-photo">
+              <div class="details">
+                <h4 class="web-name">Divyashree B L</h4>
+                <p class="role">Web Coordinator<br>St Antony's College</p>
+              </div>
+            </div>
+            <div class="team-member">
+              <img src="assets/images/WebCoordinator/Divakar.png" alt="Divakar S" class="profile-photo">
+              <div class="details">
+                <h3 class="web-name">Divakar S</h3>
+                <p class="role">Web Coordinator<br>St Antony's College</p>
+              </div>
+            </div>
+            <div class="coordinator">
+              <div class="team-member">
+                <img src="assets/images/WebCoordinator/Abhishek.png" alt="Abhishek B M" class="profile-photo">
+                <div class="details">
+                  <h4 class="web-name">Abhishek B M</h4>
+                  <p class="role">Web Developer<br>St Antony's College</p>
+                </div>
+              </div>
           </div>
-          <div class="stat-item">
-            <span class="stat-title">Yesterday's Visitors</span>
-            <span class="stat-number">98</span>
-          </div>
-          <div class="stat-item">
-            <span class="stat-title">This Month's Visitors</span>
-            <span class="stat-number">2,345</span>
-          </div>
-          <div class="stat-item">
-            <span class="stat-title">Total Visitors</span>
-            <span class="stat-number">45,678</span>
-          </div>
-        </div>
-      </div>
-    </div>
-    -->
+        </section>
 
-      <div class="row ">
-        <div class="col-12 text-center">
-          <div class="copyright mt-5 pt-5">
-            <p><small>&copy; St. Anthony's College - 2024 | All Rights Reserved.</small></p>
-          </div>
-        </div>
+        <svg>
+          <defs>
+            <filter id="blob">
+              <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+              <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
+                result="blob" />
+            </filter>
+          </defs>
+        </svg>
       </div>
-    </div>
   </footer>
 
   <!-- Scripts -->
