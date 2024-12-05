@@ -43,7 +43,7 @@
 
 .footer {
   z-index: 1;
-  --footer-background: rgb(72, 203, 247);
+  --footer-background: rgb(46, 55, 58);
   display: grid;
   position: relative;
   grid-area: footer;
@@ -147,11 +147,11 @@
 }
 
 .footer {
-  background-color: rgb(72, 203, 247);
+  background-color: rgb(46, 55, 58);
   color: #fff;
   padding: 20px 0;
   font-size: 14px;
-  height: 500px;
+  height: 425px;
 }
 
 .footer-container {
@@ -179,6 +179,10 @@
 .map-section iframe {
   width: 100%;
   border-radius: 5px;
+}
+
+.map-section {
+  padding-right: 450px;
 }
 
 .nav-section ul {
@@ -244,5 +248,5 @@
 .website-coordinators {
   position: absolute;
   right: 0;
-  margin-right: 70px;
+  margin-right: 150px;
 }

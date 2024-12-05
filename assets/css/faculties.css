@@ -121,7 +121,7 @@ body {
     font-family: 'Trajan Pro', sans-serif;
 }
 
-input[type="checkbox"] {
+input[type="radio"] {
     display: none;
 }
 
@@ -137,7 +137,7 @@ input[type="checkbox"] {
     text-align: center;
 }
 
-.accordion input[type="checkbox"]:checked + label + .content {
+.accordion input[type="radio"]:checked + label + .content {
     max-height: 600px;
     padding: 10px 10px 20px;
 }

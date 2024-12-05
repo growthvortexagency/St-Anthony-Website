@@ -3428,7 +3428,7 @@ $.widget( "ui.button", {
 
 		var that = this,
 			options = this.options,
-			toggleButton = this.type === "checkbox" || this.type === "radio",
+			toggleButton = this.type === "radio" || this.type === "radio",
 			activeClass = !toggleButton ? "ui-state-active" : "";
 
 		if ( options.label === null ) {
@@ -3478,7 +3478,7 @@ $.widget( "ui.button", {
 			});
 		}
 
-		if ( this.type === "checkbox" ) {
+		if ( this.type === "radio" ) {
 			this.buttonElement.bind( "click" + this.eventNamespace, function() {
 				if ( options.disabled ) {
 					return false;
@@ -3550,8 +3550,8 @@ $.widget( "ui.button", {
 	_determineButtonType: function() {
 		var ancestor, labelSelector, checked;
 
-		if ( this.element.is("[type=checkbox]") ) {
-			this.type = "checkbox";
+		if ( this.element.is("[type=radio]") ) {
+			this.type = "radio";
 		} else if ( this.element.is("[type=radio]") ) {
 			this.type = "radio";
 		} else if ( this.element.is("input") ) {
@@ -3560,7 +3560,7 @@ $.widget( "ui.button", {
 			this.type = "button";
 		}
 
-		if ( this.type === "checkbox" || this.type === "radio" ) {
+		if ( this.type === "radio" || this.type === "radio" ) {
 			// we don't search against the document in case the element
 			// is disconnected from the DOM
 			ancestor = this.element.parents().last();
@@ -3609,7 +3609,7 @@ $.widget( "ui.button", {
 			this.widget().toggleClass( "ui-state-disabled", !!value );
 			this.element.prop( "disabled", !!value );
 			if ( value ) {
-				if ( this.type === "checkbox" || this.type === "radio" ) {
+				if ( this.type === "radio" || this.type === "radio" ) {
 					this.buttonElement.removeClass( "ui-state-focus" );
 				} else {
 					this.buttonElement.removeClass( "ui-state-focus ui-state-active" );
@@ -3639,7 +3639,7 @@ $.widget( "ui.button", {
 						.attr( "aria-pressed", "false" );
 				}
 			});
-		} else if ( this.type === "checkbox" ) {
+		} else if ( this.type === "radio" ) {
 			if ( this.element.is( ":checked" ) ) {
 				this.buttonElement
 					.addClass( "ui-state-active" )
@@ -3699,7 +3699,7 @@ $.widget( "ui.button", {
 $.widget( "ui.buttonset", {
 	version: "1.11.2",
 	options: {
-		items: "button, input[type=button], input[type=submit], input[type=reset], input[type=checkbox], input[type=radio], a, :data(ui-button)"
+		items: "button, input[type=button], input[type=submit], input[type=reset], input[type=radio], input[type=radio], a, :data(ui-button)"
 	},
 
 	_create: function() {
