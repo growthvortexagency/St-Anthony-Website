@@ -610,3 +610,24 @@ footer p a:hover {
     letter-spacing: 0.25px;
   }
 }
+
+
+
+.under-cons{
+  height: 500px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-top: 200px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+.headline {
+  font-size: 50px;
+}
+
+.texts {
+  font-size: 18px;
+}
